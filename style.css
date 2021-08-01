@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #494646;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-style: italic;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(imagem/fundo5.jpg);
+    background-size: initial;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 45px;
+    border-bottom: 2px solid #bdb76b;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+}
+
+header ul li a {
+    transition: 300ms
+}
+
+header ul li a:hover {
+    color:#bdb76b;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 40px;
+}
+
+.container .name h5 {
+    font-size: 15px;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form input {
+    width: 40%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background-color: #bdb76b;
+    color: #464646;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 200ms;
+    border-radius: 0 px 5 px 5px 0px;
+    margin-top: 20px;
+}
+
+.form button:hover {
+    background-color: #b6ac22 ;
+    color: #252121;
+
+}
+
+@media only screen and (max-width:768px) {
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .container name h1 {
+        font-size: 30px;
+    }
+
+    .container name h1 {
+        font-size: 15px;
+    }
+
+    header {
+        font-size: 10px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+
+    
+}
